@@ -1,0 +1,8 @@
+FROM mariadb
+Expose port :3307
+ENV env_var_name=$BRUCE_variable
+default_value of “WAYNE_variable
+RUN mkdir –p/home/BATCAVE
+COPY ./home/BATCAVE
+CMD [“Mariadb”,”Server”]
+

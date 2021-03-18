@@ -1,0 +1,46 @@
+
+#!/bin/bash
+sudo apt-get install -y \
+    apt-transport-https \
+    ca-certificates \
+    curl \
+    software-properties-common
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+sudo add-apt-repository \
+   "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
+   $(lsb_release -cs) \
+   stable"
+sudo apt-get update
+sudo apt-get install -y docker-ce
+docker run -t -i -p 5902:5902 --name " ALFRED" --privileged myImage:new /bin/bash
+docker run --mount type=bind,source="/var/lib/mysq",target="//var/lib/mysql"
+docker run --mount /BATCAVE
+result=$( sudo docker images -ALFRED )
+
+if [[ -n "$result" ]]; then
+  echo "Container exists"
+if exist
+  echo "remove container"
+create schema "wayneindustries"
+create table fox (id int,  name int)
+insert into table_name
+Values (id '50', name 'BATMOBILE', ...);
+file="secret"
+echo -n "Enter a file name : "
+read file
+ 
+if [ ! -f $file ]
+then
+	echo "$file not a file!"
+	exit secret
+fi
+ 
+echo -n "Enter a Password : "
+read password("thisisadatabasepassword123456789!")
+ 
+# do encryption using UNIX crypt command
+# this command will prompt for a password
+crypt $password < $file > $file.secret
+echo  "$file.secret created as encrypted file"
+sshpass -p 'rootpassword' ssh root@<container-IP> 'echo -e "NEWPASS\nNEWPASS" | passwd root'
+
