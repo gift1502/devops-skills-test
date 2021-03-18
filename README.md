@@ -8,10 +8,14 @@ Please fork this repository and answer any questions on this markdown document.
 
 # Linux
 * What is the command to list the contents of a direcory, line by line and ordered by size ascending in human readable format ?ls -la
-* How would you add a DNS server to a network interface in Linux?  /etc/hosts
+* How would you add a DNS server to a network interface in Linux?  dns-nameservers 150.0.0.2
 * If the DNS server you've just added is not reachable, how can you get any particular hostname to resolve locally? 
-By using the machine's actual IP address
-* How would you check for SELinux related errors? getenforce command
+netsh int ip reset c:\resetlog.txt
+  netsh winsock reset
+  ipconfig/flashdns
+  Restart pc
+* How would you check for SELinux related errors? Run lvextend command
+  Run resize2fs command
 * Write the commands to add 30GB disk space to a logical volume named "docker" that belongs to a logical group named "docker-group". vgextend command
 * In the root of this repository, create a Bash script called "listit.sh", when executed, this script must do the following (in order):
     * Create a file called directories.list that contains the directory names only of the current directory.
