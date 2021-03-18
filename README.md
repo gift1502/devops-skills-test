@@ -33,12 +33,12 @@ By using the machine's actual IP address
         * It must mount /var/lib/mysql to the host operating system to /var/lib/mysql.
         * It must mount /BATCAVE to the host operating system.
     * Checks whether a container exists called ALFRED and if it does, removes an recreates it.
-    * Create a schema in the database called "wayneindustries" with one table in it called "fox" with columns "ID" and "Name".
+    * Create a schema in the database called "wayneindustries" with one table in it called "fox" with columns "ID" and "Name". 
     * Insert an entry with ID "50" and Name "BATMOBILE".
 * Create an encrypted file called "secret" in the root of this repository that contains the root password of the database (the password must be "thisisadatabasepassword123456789!").
 * Change your Bash script to start the conainer using the root password from the "secret" file.
 * Commit and push your changes.
 
 # General
-* How would you ensure any change made to this Dockerfile is source controlled, approved, tested and deployed. Explain which tools you will use as if this was going into a production environment.
+* How would you ensure any change made to this Dockerfile is source controlled, approved, tested and deployed. Explain which tools you will use as if this was going into a production environment. I will use Jenkins because is a tool I use for CI/CD Pipeline to pull the code from version control system(GIT) everytime there is a code commit
 * Commit and push your changes.
