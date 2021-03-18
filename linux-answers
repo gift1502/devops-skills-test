@@ -1,0 +1,11 @@
+Linux
+
+1.ls -la
+2.dns-nameservers 150.0.0.2
+3.netsh int ip reset c:\resetlog.txt
+  netsh winsock reset
+  ipconfig/flashdns
+  Restart pc
+4.getenforce command
+5.Run lvextend command
+  Run resize2fs command
